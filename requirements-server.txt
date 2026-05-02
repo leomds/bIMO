@@ -1,0 +1,27 @@
+# ── Core ──────────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+httpx
+python-dotenv
+runpod
+
+# ── STT ───────────────────────────────────────────────────────────────────
+# Faster-Whisper: usa CTranslate2 otimizado, roda em GPU ou CPU
+faster-whisper
+numpy>=1.24,<2.0
+
+# ── TTS ───────────────────────────────────────────────────────────────────
+# piper-tts: síntese rápida (~200ms), sem GPU, sem display, PT-BR nativo
+# Substitui pyttsx3 (que precisa de display no Linux) e Coqui (pesado demais)
+piper-tts
+
+# ── Memória de longo prazo ────────────────────────────────────────────────
+chromadb
+
+# ── Utilitários ───────────────────────────────────────────────────────────
+requests
+
+# ── TTS alternativo: Coqui XTTS v2 (apenas quando quiser voz clonada) ────
+# Descomente quando tiver o áudio de referência do BMO pronto:
+TTS>=0.22.0,<0.23

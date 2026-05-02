@@ -1,0 +1,6 @@
+sounddevice
+pygame
+requests
+Pillow
+python-dotenv
+vosk
