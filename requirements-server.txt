@@ -24,4 +24,4 @@ requests
 
 # ── TTS alternativo: Coqui XTTS v2 (apenas quando quiser voz clonada) ────
 # Descomente quando tiver o áudio de referência do BMO pronto:
-TTS>=0.22.0,<0.23
+#TTS>=0.22.0,<0.23
